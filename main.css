@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+/*  
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ --background-color:#F8F9FB;
+  --pink: #E8BAC1;
+  --hotpink: #E93766;
+  --lava: #CE1C27;
+  --crimson: #8C201E;
+  --orange: #F5735C;
+*/
+
+:root{
+  --background-color:#F8F9FB;
+  --pink: #E8BAC1;
+  --hotpink: #E93766;
+  --orange: #F5735C;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*MOBILE FIRST*/
+
+header{
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: fixed;
+  top:0;
+  z-index:999;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo figure {
+  margin: 15px 0 0 0; 
+  width: 7%;
+}
+
+#logo img{
+  border-radius: 15px;
+  width: 100%;
+}
+  
+#nav-bar{
+  margin:0;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+ #nav-bar ul{
+   align-items: center;
+   display:flex;
+   flex-flow: column wrap;
+   padding:0;
+   margin:0;
+  }
+
+#nav-bar ul li{
+  line-height: 3em;
+  list-style-type: none;
+}
+
+#nav-bar a{
+  color: var(--pink);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+#nav-bar a:hover{
+  
+  border-radius: 2px;
+  color: var(--hotpink);
+  padding: 1px 10px;
+  border-bottom: solid 2px var(--pink);
+}
+
+main{
+  margin-top: 240px;
+}
+
+#tagline{
+  background: url("https://drive.google.com/uc?export=view&id=1RgnFHxzfPUMu9wBkZgRn_HEti1zyQZIP") center no-repeat white;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+}
+
+#tagline h2{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 3em;
+  padding: 60px 0;
+  text-align: center;
+  width: 80%;
+}
+
+
+#form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin:20px 0 0 0;
+  width: 100%;
+
+}
+
+#form label{
+    width: 70%;
+}
+
+#email, #name{
+  border: 5px solid var(--pink);
+  color: var(--crimson);
+  font-size: 1.5em;
+  height: 2em;
+  margin: 0 0 20px 0;
+  padding: 7px 25px;
+  text-align: center;
+  width: 100%;
+}
+
+input::placeholder{
+   color: var(--pink);
+}
+
+#submit{
+  background-color: var(--hotpink);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 3px 3px 18px 0px var(--pink);
+  color: white;
+  font-size: 1.5em;
+  height: 2em;
+  margin: 50px 0 0 0;
+  width: 60%;
+}
+
+#features{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 150px 0;
+  width:100%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+  text-align: center;
+ width: 90%;
+}
+
+.icon {
+  color: var(--hotpink);
+  font-size: 5em;
+}
+
+.description h2{
+  color: var(--hotpink);
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.description p{
+  color:#A9A9A9;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#works{
+  background-color: var(--pink);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 150px 0;
+}
+
+#works h2{
+ color: var(--hotpink);
+ font-size: 3em;
+}
+
+#video-container{
+  position: relative;
+  overflow: hidden;
+  padding-top: 50%;
+  width: 70%;
+
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+footer{
+  padding-top: 50px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 50px 50px;
+}
+
+footer li{
+  padding: 1.5em;
+}
+
+.footer-icon{
+  color: var(--hotpink);
+  font-size: 3em;
+}
+
+.footer-icon:hover{
+  color: var(--pink);
+ 
+}
+
+
+
+/*TABLET & DESKTOP*/
+@media only screen and (min-width: 768px){
+  header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }  
+
+  #logo{
+    display: flex;
+    justify-content: start;
+    padding: 50px 0 0 20px;
+    width: 50%;
+  }
+
+  #logo figure {
+    margin: 0 0 0 10px; 
+    width: 10%;
+  }
+
+  #nav-bar{
+    padding-top: 50px;
+    width: 50%;
+  }
+
+  #nav-bar ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  #nav-bar a{
+    font-size: 1.5em;
+  }
+
+  main{
+    margin-top: 150px;
+  }
+
+  #tagline{
+    align-items: center;
+    justify-content: center;
+  }
+  #tagline h2{
+    font-size: 4em;
+    padding: 40px 0;
+  }
+
+  #email, #name, #submit{
+    font-size: 2em;
+  }
+
+  .container{
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .description {
+    width: 60%;
+  }
+
+  
+
+}
